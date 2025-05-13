@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyCubs</title>
+  <meta name="description" content="Safe, Reliable, and Flexible. Care You Can Trust.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="auth.css">
+  <link rel="stylesheet" href="booking.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Feather Icons (similar to Lucide) -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="/" class="logo">
+        <span>MyCubs</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#why-choose-us" class="nav-link">Why Choose Us</a>
+          <a href="#pricing" class="nav-link">Pricing</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="btn btn-outline login-btn">Login</button>
+          <div class="user-menu">
+            <button class="profile-toggle">
+              <span class="user-name">User</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="profile-dropdown">
+              <div class="dropdown-header">
+                <span class="user-name">User</span>
+                <span class="user-email">user@example.com</span>
+              </div>
+              <ul>
+                <li><a href="#"><i data-feather="user"></i> My Profile</a></li>
+                <li><a href="#"><i data-feather="calendar"></i> My Bookings</a></li>
+                <li><a href="#"><i data-feather="settings"></i> Settings</a></li>
+                <li><a href="#" class="logout-btn"><i data-feather="log-out"></i> Log Out</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-primary book-visit-btn">Book a Visit</button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#why-choose-us" class="nav-link">Why Choose Us</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <div class="mobile-nav-buttons">
+          <button class="btn btn-outline login-btn">Login</button>
+          <div class="user-menu">
+            <div class="mobile-user-info">
+              <span class="user-name">User</span>
+            </div>
+            <a href="#" class="mobile-menu-link"><i data-feather="user"></i> My Profile</a>
+            <a href="#" class="mobile-menu-link"><i data-feather="calendar"></i> My Bookings</a>
+            <a href="#" class="mobile-menu-link"><i data-feather="settings"></i> Settings</a>
+            <a href="#" class="mobile-menu-link logout-btn"><i data-feather="log-out"></i> Log Out</a>
+          </div>
+          <button class="btn btn-primary">Book a Visit</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1>
+            Safe, Reliable, and Flexible.
+            <span>Care You Can Trust.</span>
+          </h1>
+          <p>
+            Providing loving care and early education for your little ones with flexible scheduling to meet the needs of
+            modern families.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary book-visit-btn">Book a Visit</button>
+            <button class="btn btn-outline btn-lg">
+              <i data-feather="download"></i>
+              Download Our App
+            </button>
+          </div>
+          <div class="hero-image">
+            <img src="/Images/Happy-childcare-workers-Groot.jpeg" alt="Happy children and caregivers at Daycare">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Us</h2>
+          <p>Nurturing young minds in a safe and stimulating environment</p>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>Our Mission</h3>
+            <p>
+              At MyCubs Jakarta, we're committed to providing high-quality childcare that adapts to the
+              needs of modern working parents. We believe in creating a nurturing environment where children can learn,
+              play, and grow while parents have peace of mind.
+            </p>
+            <h3>Core Values</h3>
+            <ul class="values-list">
+              <li>
+                <span>Safety:</span> Your child's wellbeing is our top priority
+              </li>
+              <li>
+                <span>Reliability:</span> Consistent care you can count on
+              </li>
+              <li>
+                <span>Flexibility:</span> Adaptable schedules for busy families
+              </li>
+            </ul>
+          </div>
+          <div class="about-images">
+            <div class="image-card">
+              <img src="/Images/child-care-environment-min-scaled-1.jpg" alt="Daycare environment">
+            </div>
+            <div class="image-card">
+              <img src="/Images/compassionate-education-image-1-scaled.jpeg" alt="Caregiver with children">
+            </div>
+            <div class="image-card">
+              <img src="/Images/AdobeStock_234838550_Resized-1024x683.jpeg" alt="Children playing">
+            </div>
+            <div class="image-card">
+              <img src="/Images/x44_2.jpg.jpeg" alt="Learning activities">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <p>Flexible childcare options designed for modern families</p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Flexible Options -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i data-feather="clock"></i>
+            </div>
+            <h3>Flexible Scheduling</h3>
+            <ul>
+              <li>Hourly care for quick appointments</li>
+              <li>Daily options for regular schedules</li>
+              <li>Weekly plans for consistent care</li>
+            </ul>
+          </div>
+
+          <!-- Programs -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i data-feather="award"></i>
+            </div>
+            <h3>Educational Programs</h3>
+            <ul>
+              <li>Age-appropriate learning activities</li>
+              <li>Developmental support and milestones</li>
+              <li>Structured meal and nap routines</li>
+            </ul>
+          </div>
+
+          <!-- Routines -->
+          <div class="service-card">
+            <div class="service-icon">
+              <i data-feather="coffee"></i>
+            </div>
+            <h3>Daily Routines</h3>
+            <ul>
+              <li>Nutritious meals and snacks</li>
+              <li>Consistent nap schedules</li>
+              <li>Outdoor play and exercise</li>
+            </ul>
+          </div>
+
+          <!-- Online Services -->
+          <div class="service-card online-services">
+            <h3>Online Services</h3>
+            <p>Digital tools to keep you connected with your child's care</p>
+            <div class="online-services-grid">
+              <div class="online-service">
+                <i data-feather="smartphone"></i>
+                <h4>Mobile App</h4>
+                <p>Book care, receive updates, and manage your account from anywhere</p>
+              </div>
+              <div class="online-service">
+                <i data-feather="video"></i>
+                <h4>Live CCTV Streaming</h4>
+                <p>Secure access to view your child throughout the day</p>
+              </div>
+              <div class="online-service">
+                <i data-feather="calendar"></i>
+                <h4>Online Dashboard</h4>
+                <p>View daily reports, activities, and developmental progress</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="why-choose-us-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Why Choose Us</h2>
+          <p>What sets Flexible Baby Daycare apart</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Safety -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-feather="shield"></i>
+            </div>
+            <h3>Safety First</h3>
+            <ul>
+              <li>Background-checked staff</li>
+              <li>Strict hygiene protocols</li>
+              <li>Secure facility with controlled access</li>
+              <li>Child-proofed environment</li>
+            </ul>
+          </div>
+
+          <!-- Flexibility -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-feather="clock"></i>
+            </div>
+            <h3>Unmatched Flexibility</h3>
+            <ul>
+              <li>Custom schedules for your needs</li>
+              <li>Easy rescheduling options</li>
+              <li>Extended hours for busy parents</li>
+              <li>No long-term commitments</li>
+            </ul>
+          </div>
+
+          <!-- Reliability -->
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-feather="check-circle"></i>
+            </div>
+            <h3>Trusted Reliability</h3>
+            <ul>
+              <li>Transparent daily updates</li>
+              <li>Consistent caregivers</li>
+              <li>Structured daily routines</li>
+              <li>Professional management</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials">
+          <h3>What Parents Say</h3>
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="stars">
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+              </div>
+              <p>
+                "The flexibility of scheduling at this daycare has been a lifesaver for our family. The staff is
+                amazing with our daughter and we love being able to check in on her through the app."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="images/parent1.jpg" alt="Parent">
+                </div>
+                <div>
+                  <p class="author-name">Sarah Johnson</p>
+                  <p class="author-title">Mother of 2</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+              </div>
+              <p>
+                "As working parents, we needed a daycare that could accommodate our unpredictable schedules. MyCubs has been the perfect solution, providing excellent care on our terms."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="images/parent2.jpg" alt="Parent">
+                </div>
+                <div>
+                  <p class="author-name">David Chen</p>
+                  <p class="author-title">Father of 1</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+              </div>
+              <p>
+                "The educational activities and developmental support have been incredible. Our son has flourished since joining, and we appreciate the detailed daily reports we receive."
+              </p>
+              <div class="testimonial-author">
+                <div class="author-image">
+                  <img src="images/parent3.jpg" alt="Parent">
+                </div>
+                <div>
+                  <p class="author-name">Anita Wijaya</p>
+                  <p class="author-title">Mother of 1</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Pricing Plans</h2>
+          <p>Flexible options to fit your family's needs</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Hourly Plan -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Hourly Care</h3>
+              <p>Perfect for occasional needs</p>
+              <div class="price">
+                <span class="amount">Rp 25K</span>
+                <span class="period">/hour</span>
+              </div>
+            </div>
+            <div class="pricing-content">
+              <ul>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>Minimum 2 hours</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>Snacks included</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>Basic activities</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>App access</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-primary book-now-btn">Book Now</button>
+            </div>
+          </div>
+
+          <!-- Daily Plan -->
+          <div class="pricing-card popular">
+            <div class="pricing-header">
+              <div class="popular-tag">MOST POPULAR</div>
+              <h3>Daily Care</h3>
+              <p>For regular schedules</p>
+              <div class="price">
+                <span class="amount">Rp 125K</span>
+                <span class="period">/day</span>
+              </div>
+            </div>
+            <div class="pricing-content">
+              <ul>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>Full day care (8 hours)</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>Meals and snacks included</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>Educational activities</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>CCTV access</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>Daily reports</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-primary book-now-btn">Book Now</button>
+            </div>
+          </div>
+
+          <!-- Monthly Plan -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>Monthly Care</h3>
+              <p>Best value for regular care</p>
+              <div class="price">
+                <span class="amount">Rp 1500K</span>
+                <span class="period">/month</span>
+              </div>
+            </div>
+            <div class="pricing-content">
+              <ul>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>20 days of care per month</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>All meals and snacks</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>Premium educational program</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>Priority booking</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>Extended hours option</span>
+                </li>
+                <li>
+                  <i data-feather="check"></i>
+                  <span>Developmental assessments</span>
+                </li>
+              </ul>
+            </div>
+            <div class="pricing-footer">
+              <button class="btn btn-primary book-now-btn">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-note">
+          <p>
+            All plans include basic care, trained staff, and secure facilities.
+            <br>
+            Additional services available upon request.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Everything you need to know about our daycare services</p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span>How do I book or cancel care?</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>
+                You can book care through our mobile app or website up to 24 hours in advance. Cancellations made at least 12 hours before the scheduled time receive a full refund. For last-minute cancellations, a 50% fee applies.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span>What safety standards do you maintain?</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>
+                We maintain strict safety standards including background checks for all staff, secure entry systems, regular sanitization, child-proofed facilities, and CCTV monitoring. All staff are trained in first aid and CPR.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span>What are your drop-off and pick-up policies?</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Drop-off and pick-up times are flexible within our operating hours (7 AM - 7 PM). Parents must sign children in and out using our digital system. Only authorized individuals listed in your account can pick up your child.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span>What features does your app offer?</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Our app allows you to book care, make payments, view real-time updates and photos, access CCTV feeds, communicate with caregivers, view daily reports, and manage your account details.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span>Do you provide meals and snacks?</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>
+                Yes, we provide nutritious meals and snacks appropriate for your child's age. We accommodate dietary restrictions and allergies. Our menu is designed by a nutritionist and prepared fresh daily.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-trigger">
+              <span>What is the staff-to-child ratio?</span>
+              <i data-feather="chevron-down"></i>
+            </button>
+            <div class="accordion-content">
+              <p>
+                We maintain a 1:3 ratio for infants (0-12 months), 1:4 for toddlers (1-2 years), and 1:6 for preschoolers (3-5 years). This ensures each child receives proper attention and care.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact & Location</h2>
+          <p>Get in touch with us or visit our facility</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Map and Contact Info -->
+          <div class="contact-info">
+            <div class="map">
+              <!-- Google Maps Integration -->
+              <div id="googleMap" style="width:100%; height:100%;"></div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-item">
+                <i data-feather="map-pin"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>
+                    Jl. Raya Kb. Jeruk No.27
+                    <br>
+                    Jakarta Barat, 11530
+                    <br>
+                    Indonesia
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i data-feather="phone"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+62 21 1234 5678</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i data-feather="mail"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>mycubsdaycare@gmail.com.id</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <i data-feather="message-square"></i>
+                <div>
+                  <h3>WhatsApp</h3>
+                  <p>+62 812 3456 7890</p>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <button class="social-btn">
+                  <i data-feather="instagram"></i>
+                </button>
+                <button class="social-btn">
+                  <i data-feather="facebook"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+
+            <div class="app-download">
+              <h3>Download Our App</h3>
+              <div class="app-buttons">
+                <button class="btn btn-outline">Google Play</button>
+                <button class="btn btn-outline">App Store</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="/" class="logo">
+            <span>MyCubs</span>
+          </a>
+          <p>
+            Safe, reliable, and flexible childcare services for modern families in Jakarta.
+          </p>
+          <div class="footer-social">
+            <button class="social-btn">
+              <i data-feather="instagram"></i>
+            </button>
+            <button class="social-btn">
+              <i data-feather="facebook"></i>
+            </button>
+            <button class="social-btn">
+              <i data-feather="twitter"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Hourly Care</a></li>
+            <li><a href="#">Daily Care</a></li>
+            <li><a href="#">Monthly Care</a></li>
+            <li><a href="#">Educational Programs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Licensing</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Flexible Baby Daycare Jakarta. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Auth Modals -->
+  <div id="authOverlay" class="auth-overlay"></div>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="auth-modal">
+    <div class="auth-modal-content">
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+      <h2>Log In</h2>
+      <p>Welcome back! Please log in to your account.</p>
+      
+      <form id="loginForm" class="auth-form">
+        <div class="form-group">
+          <label for="loginEmail">Email</label>
+          <input type="email" id="loginEmail" required placeholder="your@email.com">
+        </div>
+        
+        <div class="form-group">
+          <label for="loginPassword">Password</label>
+          <input type="password" id="loginPassword" required placeholder="••••••••">
+        </div>
+        
+        <div id="loginError" class="auth-error"></div>
+        
+        <button type="submit" id="loginBtn" class="btn btn-primary">Log In</button>
+      </form>
+      
+      <div class="auth-footer">
+        <p>Don't have an account? <a href="#" id="switchToSignup">Sign up</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div id="signupModal" class="auth-modal">
+    <div class="auth-modal-content">
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+      <h2>Create Account</h2>
+      <p>Join Flexible Baby Daycare to book services and more.</p>
+      
+      <form id="signupForm" class="auth-form">
+        <div class="form-group">
+          <label for="signupName">Full Name</label>
+          <input type="text" id="signupName" required placeholder="Your Name">
+        </div>
+        
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" required placeholder="your@email.com">
+        </div>
+        
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <input type="password" id="signupPassword" required placeholder="••••••••">
+        </div>
+        
+        <div class="form-group">
+          <label for="signupConfirmPassword">Confirm Password</label>
+          <input type="password" id="signupConfirmPassword" required placeholder="••••••••">
+        </div>
+        
+        <div id="signupError" class="auth-error"></div>
+        
+        <button type="submit" id="signupBtn" class="btn btn-primary">Sign Up</button>
+      </form>
+      
+      <div class="auth-footer">
+        <p>Already have an account? <a href="#" id="switchToLogin">Log in</a></p>
+      </div>
+    </div>
+  </div>
+
+     <!-- Booking Modal -->
+  <div id="bookingOverlay" class="booking-overlay"></div>
+
+  <div id="bookingModal" class="booking-modal">
+    <div class="booking-modal-content">
+      <button class="close-modal" aria-label="Close modal">&times;</button>
+      <h2>Book a Visit</h2>
+      <p>Schedule a visit or book daycare services for your child.</p>
+      
+      <!-- Booking Steps -->
+      <div class="booking-steps">
+        <div class="step active" data-step="1">
+          <span class="step-number">1</span>
+          <span class="step-text">Service</span>
+        </div>
+        <div class="step" data-step="2">
+          <span class="step-number">2</span>
+          <span class="step-text">Details</span>
+        </div>
+        <div class="step" data-step="3">
+          <span class="step-number">3</span>
+          <span class="step-text">Confirm</span>
+        </div>
+      </div>
+      
+      <!-- Booking Form -->
+      <form id="bookingForm" class="booking-form">
+        <!-- Step 1: Service Selection -->
+        <div class="booking-step-content active" data-step="1">
+          <h3>Select Service</h3>
+          
+          <div class="service-options">
+            <div class="service-option">
+              <input type="radio" id="hourlyService" name="serviceType" value="hourly" checked>
+              <label for="hourlyService">
+                <div class="service-option-header">
+                  <h4>Hourly Care</h4>
+                  <span class="price">Rp 25K/hour</span>
+                </div>
+                <p>Perfect for occasional needs, minimum 2 hours</p>
+              </label>
+            </div>
+            
+            <div class="service-option">
+              <input type="radio" id="dailyService" name="serviceType" value="daily">
+              <label for="dailyService">
+                <div class="service-option-header">
+                  <h4>Daily Care</h4>
+                  <span class="price">Rp 125K/day</span>
+                </div>
+                <p>Full day care (8 hours) with meals included</p>
+              </label>
+            </div>
+            
+            <div class="service-option">
+              <input type="radio" id="monthlyService" name="serviceType" value="monthly">
+              <label for="monthlyService">
+                <div class="service-option-header">
+                  <h4>Monthly Care</h4>
+                  <span class="price">Rp 1500K/month</span>
+                </div>
+                <p>20 days of care per month, best value</p>
+              </label>
+            </div>
+            
+            <div class="service-option">
+              <input type="radio" id="visitService" name="serviceType" value="visit">
+              <label for="visitService">
+                <div class="service-option-header">
+                  <h4>Facility Visit</h4>
+                  <span class="price">Free</span>
+                </div>
+                <p>Tour our facility and meet our staff</p>
+              </label>
+            </div>
+          </div>
+          
+          <div class="booking-nav">
+            <button type="button" class="btn btn-primary next-step">Continue</button>
+          </div>
+        </div>
+        
+        <!-- Step 2: Details -->
+        <div class="booking-step-content" data-step="2">
+          <h3>Enter Details</h3>
+          
+          <div class="form-section">
+            <h4>Parent Information</h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="parentName">Full Name</label>
+                <input type="text" id="parentName" name="parentName" required>
+                <span class="error-message" id="parentNameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="parentPhone">Phone Number</label>
+                <input type="tel" id="parentPhone" name="parentPhone" required>
+                <span class="error-message" id="parentPhoneError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="parentEmail">Email</label>
+              <input type="email" id="parentEmail" name="parentEmail" required>
+              <span class="error-message" id="parentEmailError"></span>
+            </div>
+          </div>
+          
+          <div class="form-section">
+            <h4>Child Information</h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="childName">Child's Name</label>
+                <input type="text" id="childName" name="childName" required>
+                <span class="error-message" id="childNameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="childAge">Age (months)</label>
+                <input type="number" id="childAge" name="childAge" min="1" max="60" required>
+                <span class="error-message" id="childAgeError"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="childNotes">Special Requirements or Notes</label>
+              <textarea id="childNotes" name="childNotes" rows="2"></textarea>
+            </div>
+          </div>
+          
+          <div class="form-section">
+            <h4>Schedule</h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="bookingDate">Date</label>
+                <input type="date" id="bookingDate" name="bookingDate" required>
+                <span class="error-message" id="bookingDateError"></span>
+              </div>
+              <div class="form-group time-select">
+                <label for="bookingTime">Time</label>
+                <input type="time" id="bookingTime" name="bookingTime" required>
+                <span class="error-message" id="bookingTimeError"></span>
+              </div>
+            </div>
+            
+            <div id="hourlyOptions" class="conditional-field">
+              <div class="form-group">
+                <label for="hoursDuration">Duration (hours)</label>
+                <input type="number" id="hoursDuration" name="hoursDuration" min="2" max="8" value="2">
+                <span class="error-message" id="hoursDurationError"></span>
+              </div>
+            </div>
+            
+            <div id="monthlyOptions" class="conditional-field">
+              <div class="form-group">
+                <label for="startDate">Start Date</label>
+                <input type="date" id="startDate" name="startDate">
+                <span class="error-message" id="startDateError"></span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="booking-nav">
+            <button type="button" class="btn btn-outline prev-step">Back</button>
+            <button type="button" class="btn btn-primary next-step">Review</button>
+          </div>
+        </div>
+        
+        <!-- Step 3: Confirmation -->
+        <div class="booking-step-content" data-step="3">
+          <h3>Review Booking</h3>
+          
+          <div class="booking-summary">
+            <div class="summary-section">
+              <h4>Selected Service</h4>
+              <p id="summaryService">Hourly Care - Rp 75K/hour</p>
+            </div>
+            
+            <div class="summary-section">
+              <h4>Parent Information</h4>
+              <p id="summaryParent">Name: John Doe</p>
+              <p id="summaryContact">Phone: +62 812 3456 7890 | Email: john@example.com</p>
+            </div>
+            
+            <div class="summary-section">
+              <h4>Child Information</h4>
+              <p id="summaryChild">Name: Jane Doe | Age: 24 months</p>
+              <p id="summaryNotes">Notes: No allergies</p>
+            </div>
+            
+            <div class="summary-section">
+              <h4>Schedule</h4>
+              <p id="summarySchedule">Date: May 15, 2023 | Time: 9:00 AM</p>
+              <p id="summaryDuration">Duration: 2 hours</p>
+            </div>
+            
+            <div class="summary-section total-section">
+              <h4>Total</h4>
+              <p id="summaryTotal" class="total-price">Rp 150,000</p>
+            </div>
+          </div>
+          
+          <div class="form-group terms-checkbox">
+            <input type="checkbox" id="termsAgree" name="termsAgree" required>
+            <label for="termsAgree">I agree to the <a href="#" target="_blank">Terms and Conditions</a></label>
+            <span class="error-message" id="termsAgreeError"></span>
+          </div>
+          
+          <div id="bookingError" class="booking-error"></div>
+          
+          <div class="booking-nav">
+            <button type="button" class="btn btn-outline prev-step">Back</button>
+            <button type="submit" id="confirmBookingBtn" class="btn btn-primary">Confirm Booking</button>
+          </div>
+        </div>
+      </form>
+      
+      <!-- Success Message (hidden by default) -->
+      <div id="bookingSuccess" class="booking-success">
+        <div class="success-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+        </div>
+        <h3>Booking Confirmed!</h3>
+        <p>Your booking has been successfully submitted. We'll contact you shortly to confirm the details.</p>
+        <p class="booking-reference">Booking Reference: <span id="bookingReference">FBD-12345</span></p>
+        <button type="button" class="btn btn-primary close-booking">Done</button>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+  <script src="maps.js"></script>
+  <script src="booking.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <script>
+   document.querySelectorAll('.accordion-trigger').forEach(trigger => {
+    trigger.addEventListener('click', function () {
+    const content = this.nextElementSibling;
+    const isActive = content.classList.contains('active');
+
+    // Close all
+    document.querySelectorAll('.accordion-content').forEach(item => {
+      item.style.height = '0';
+      item.classList.remove('active');
+      item.previousElementSibling.setAttribute('aria-expanded', 'false');
+    });
+
+    // If it was not active, open it
+    if (!isActive) {
+      content.classList.add('active');
+      content.style.height = `${content.scrollHeight}px`;
+      this.setAttribute('aria-expanded', 'true');
+    }
+   });
+  });
+  </script>
+</body>
+
+</body>
+</html>
