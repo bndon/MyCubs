@@ -14,6 +14,10 @@
   --radius: 0.65rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +67,7 @@ img {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0;
+  gap: 20rem;
 }
 
 section {
@@ -451,58 +456,46 @@ section {
   scroll-margin-top: 3rem;
   min-height: 115vh;
 }
-.features-grid {
+.experiences-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-bottom: 4rem;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 }
 
-.feature-card {
-  background-color: var(--background);
-  border-radius: var(--radius);
-  padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  text-align: center;
-  border: 1px solid var(--border);
-  margin-top: -1rem;
+.experience-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  border: 2px solid #ff7a59;
 }
 
-.feature-icon {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 1rem;
+.experience-card:hover {
+  transform: translateY(-5px);
 }
 
-.feature-card:nth-child(1) .feature-icon {
-  background-color: rgba(255, 182, 193, 0.2);
-  color: var(--primary-foreground);
-}
-
-.feature-card:nth-child(2) .feature-icon {
-  background-color: rgba(176, 240, 201, 0.2);
-  color: var(--secondary-foreground);
-}
-
-.feature-card:nth-child(3) .feature-icon {
-  background-color: rgba(255, 228, 181, 0.2);
-  color: var(--accent-foreground);
-}
-
-.feature-card h3 {
+.experience-icon {
   margin-bottom: 1rem;
+  color: #ff7a59;
 }
 
-.feature-card ul {
-  color: var(--muted-foreground);
-}
-
-.feature-card ul li {
+.experience-card h3 {
   margin-bottom: 0.5rem;
+}
+
+.experience-card p {
+  font-style: italic;
+  color: #555;
+}
+
+.experience-name {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
 }
 
 .testimonials {
@@ -517,7 +510,7 @@ section {
 .testimonials-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .testimonial-card {
@@ -525,9 +518,13 @@ section {
   border-radius: var(--radius);
   padding: 1.5rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
   border: 2px solid var(--border);
 }
 
+.testimonial-card:hover{
+  transform: translateY(-5px);
+}
 .stars {
   display: flex;
   margin-bottom: 1rem;
